@@ -37,6 +37,10 @@ public class CruddemoApplication {
 
 
 		// display list of students
+
+		for(Student tempStudent : theStudents){
+			System.out.println(tempStudent);
+		}
 	}
 
 	private void readStudent(StudentDAO studentDAO) {
