@@ -28,8 +28,16 @@ public class CruddemoApplication {
 
 		//	queryForStudents(studentDAO);
 
-			updateStudent(studentDAO);
+		//	updateStudent(studentDAO);
+
+			deleteStudent(studentDAO);
 		};
+	}
+
+	private void deleteStudent(StudentDAO studentDAO) {
+
+		int studentId = 3;
+		System.out.println("Deleting student id: " + studentId);
 	}
 
 	private void updateStudent(StudentDAO studentDAO) {
@@ -37,7 +45,7 @@ public class CruddemoApplication {
 		// retrieve student based on the id : primary key
 
 		int  studentId=1;
-		System.out.println("Getting student with id" + studentId);
+		System.out.println("Getting student with id :" + studentId);
 		Student myStudent = studentDAO.findById(studentId);
 
 		// change first name to " Hazal"
