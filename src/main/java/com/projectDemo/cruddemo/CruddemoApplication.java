@@ -26,8 +26,21 @@ public class CruddemoApplication {
 
 		//	readStudent(studentDAO);
 
-			queryForStudents(studentDAO);
+		//	queryForStudents(studentDAO);
+
+			updateStudent(studentDAO);
 		};
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+
+		// retrieve student based on the id : primary key
+
+		// change first name to " Hazal"
+
+		// update the student
+
+		// display the updated student
 	}
 
 	private void queryForStudents(StudentDAO studentDAO) {
